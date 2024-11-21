@@ -47,4 +47,6 @@ dependencies {
 
     //悬浮窗框架：https://github.com/getActivity/EasyWindow
     implementation rootProject.ext.dependencies.EasyWindow
+    testImplementation 'junit:junit:4.12'
+    testImplementation 'junit:junit:4.12'
 }
