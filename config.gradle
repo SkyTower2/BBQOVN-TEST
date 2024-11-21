@@ -1,0 +1,80 @@
+ext {
+    //android开发版本配置
+    android = [compileSdkVersion        : 34,
+               buildToolsVersion        : "28.0.0",
+               applicationIdApp         : "com.oyml.bluetooth",
+               applicationIdUtils       : "com.me.ml.utils",
+               applicationIdBle         : "com.me.ml.bluetooth_kit",
+               applicationIdLogcat      : "com.me.ml.logcat",
+               applicationIdMvvm        : "com.me.ml.mvvm",
+               minSdkVersion            : 26,
+               targetSdkVersion         : 33,//更新到34会出现注册广播接收器错误
+               versionCode              : 1,
+               versionName              : "1.2.2",
+               testInstrumentationRunner: "androidx.test.runner.AndroidJUnitRunner",
+               consumerProguardFiles    : "consumer-rules.pro"
+    ]
+    //version配置
+    versions = ["support-version"     : "1.0.0",
+                "appcompat-version"   : "1.6.1",
+                "recyclerview-version": "1.2.1",
+                "material-version"    : "1.12.0",
+                "junit-version"       : "4.12",]
+    //support配置
+    support = ['support-v4'     : "androidx.legacy:legacy-support-v4:${versions["support-version"]}",
+               'appcompat-v7'   : "androidx.appcompat:appcompat:${versions["appcompat-version"]}",
+               'recyclerview-v7': "androidx.recyclerview:recyclerview:${versions["recyclerview-version"]}",
+               'material'       : "com.google.android.material:material:${versions["material-version"]}",
+               'junit'          : "junit:junit:${versions["junit-version"]}",]
+    //依赖第三方配置
+    dependencies = [
+            //XPopup对话框
+            "XPopup"                               : "com.github.li-xiaojun:XPopup:2.10.0",
+            //权限申请
+            "XXPermissions"                        : "com.github.getActivity:XXPermissions:18.6",
+            //内存泄漏测试
+            "leakcanary-android"                   : "com.squareup.leakcanary:leakcanary-android:2.14",
+            "leakcanary-support-fragment"          : "com.squareup.leakcanary:leakcanary-support-fragment:1.6.3",
+            //MMKV
+            "MMKV"                                 : "com.tencent:mmkv:2.0.0",
+            //悬浮窗框架
+            "EasyWindow"                           : "com.github.getActivity:EasyWindow:10.6",
+            //多进程
+            "multidex"                             : "androidx.multidex:multidex:2.0.1",
+            //rxjava
+            "rxjava"                               : "io.reactivex.rxjava2:rxjava:2.2.3",
+            "rxandroid"                            : "io.reactivex.rxjava2:rxandroid:2.1.0",
+            //rx系列与View生命周期同步
+            "rxlifecycle"                          : "com.trello.rxlifecycle2:rxlifecycle:2.2.2",
+            "rxlifecycle-components"               : "com.trello.rxlifecycle2:rxlifecycle-components:2.2.2",
+            //rxbinding
+            "rxbinding"                            : "com.jakewharton.rxbinding2:rxbinding:2.1.1",
+            //material-dialogs
+            "material-dialogs-core"                : "com.afollestad.material-dialogs:core:0.9.6.0",
+            "material-dialogs-commons"             : "com.afollestad.material-dialogs:commons:0.9.6.0",
+            //recyclerview的databinding套装
+            "bindingcollectionadapter"             : "me.tatarka.bindingcollectionadapter2:bindingcollectionadapter:4.0.0",
+            "bindingcollectionadapter-recyclerview": "me.tatarka.bindingcollectionadapter2:bindingcollectionadapter-recyclerview:4.0.0",
+            "bindingcollectionadapter-viewpager2"  : "me.tatarka.bindingcollectionadapter2:bindingcollectionadapter-viewpager2:4.0.0",
+            //Google AAC
+            "lifecycle-extensions"                 : "androidx.lifecycle:lifecycle-extensions:2.0.0",
+            "lifecycle-compiler"                   : "androidx.lifecycle:lifecycle-compiler:2.0.0",
+            //glide图片加载
+            "glide"                                : "com.github.bumptech.glide:glide:4.11.0",
+            "glide-compiler"                       : "com.github.bumptech.glide:compiler:4.11.0",
+            //json解析
+            "gson"                                 : "com.google.code.gson:gson:2.8.6",
+            //network
+            "okhttp"                               : "com.squareup.okhttp3:okhttp:3.10.0",
+            "retrofit"                             : "com.squareup.retrofit2:retrofit:2.4.0",
+            "converter-gson"                       : "com.squareup.retrofit2:converter-gson:2.4.0",
+            "adapter-rxjava"                       : "com.squareup.retrofit2:adapter-rxjava2:2.4.0",
+            //network
+            "okhttp"                               : "com.squareup.okhttp3:okhttp:3.10.0",
+            "retrofit"                             : "com.squareup.retrofit2:retrofit:2.4.0",
+            "converter-gson"                       : "com.squareup.retrofit2:converter-gson:2.4.0",
+            "adapter-rxjava"                       : "com.squareup.retrofit2:adapter-rxjava2:2.4.0",
+    ]
+}
+
+

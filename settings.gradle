@@ -1,0 +1,5 @@
+include ':app'
+include ':bluetooth-kit'
+include ':logcat'
+include ':mvvm'
+include ':utils'

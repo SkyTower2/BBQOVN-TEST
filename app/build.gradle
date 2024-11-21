@@ -1,0 +1,59 @@
+apply plugin: 'com.android.application'
+
+android {
+
+    //命名空间
+    namespace rootProject.ext.android.applicationIdApp
+
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+
+    defaultConfig {
+        applicationId rootProject.ext.android.applicationIdApp
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    packagingOptions {
+        resources {
+            exclude 'META-INF/gradle/incremental.annotation.processors'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+    implementation project(':bluetooth-kit')
+    implementation project(':logcat')
+
+    implementation rootProject.ext.support["support-v4"]
+    implementation rootProject.ext.support["appcompat-v7"]
+    implementation rootProject.ext.support["recyclerview-v7"]
+    implementation rootProject.ext.support["material"]
+
+    //XPopup对话框
+    implementation rootProject.ext.dependencies.XPopup
+    //权限申请
+    implementation rootProject.ext.dependencies.XXPermissions
+    implementation project(':mvvm')
+    implementation project(':utils')
+    //内存泄漏测试
+    debugImplementation rootProject.ext.dependencies["leakcanary-android"]
+    debugImplementation rootProject.ext.dependencies["leakcanary-support-fragment"]
+    //权限申请
+    implementation rootProject.ext.dependencies.XXPermissions
+}

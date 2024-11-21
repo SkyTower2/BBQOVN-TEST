@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:id="@+id/app_version"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#01cbf6"
+        android:padding="5dp"
+        android:text="版本 1.0.1"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/app_version"
+        android:layout_weight="1"
+        android:background="#01a9cd"
+        android:gravity="center"
+        android:text="@string/devices"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/filter_criteria"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:background="#d0d0d0"
+        android:drawableRight="@mipmap/dropdown"
+        android:drawablePadding="8dp"
+        android:padding="15dp"
+        android:text="---"
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+
+    <com.me.ml.view.PullToRefreshFrameLayout
+        android:id="@+id/pulllayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/filter_criteria"
+        custom:has_divider="true"
+        custom:has_footer="false"
+        custom:has_header="true"
+        custom:has_shadow="false" />
+</RelativeLayout>
