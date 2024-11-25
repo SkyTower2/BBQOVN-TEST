@@ -14,7 +14,7 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import com.me.ml.utils.StringUtils;
+import com.me.ml.utils.StringBUtils;
 import com.oyml.bluetooth.R;
 
 public class PullHeadView extends ViewGroup{
@@ -166,7 +166,7 @@ public class PullHeadView extends ViewGroup{
 		if(mTimeTag != null){
 			long time = mContext.getSharedPreferences(SP_NAME, 0).getLong(mTimeTag, 0);
 			String format = mContext.getString(R.string.string_update_time,
-					StringUtils.getTimeDisplayNameNormal(time));
+					StringBUtils.getTimeDisplayNameNormal(time));
 			return format;
 		}else {
 		    return "最后更新于：刚刚";

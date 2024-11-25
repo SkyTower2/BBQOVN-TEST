@@ -9,7 +9,7 @@ import java.util.Calendar;
 import java.util.Locale;
 import java.util.Random;
 
-public class StringUtils {
+public class StringBUtils {
 
     private static Random rnd = new Random();
 

@@ -19,6 +19,7 @@ import androidx.core.app.ActivityCompat;
 import com.hjq.permissions.OnPermissionCallback;
 import com.hjq.permissions.Permission;
 import com.hjq.permissions.XXPermissions;
+import com.me.ml.service.BbqovnService;
 import com.me.ml.utils.CommonUtils;
 import com.me.ml.utils.bar.StatusBarUtil;
 import com.me.ml.constant.AppConstants;
@@ -520,5 +521,9 @@ public class MainActivity extends Activity {
         super.onDestroy();
         //取消注册
         ClientManager.getClient().unregisterBluetoothStateListener(mBluetoothStateListener);
+
+        //停止前台服务
+        Intent serviceIntent = new Intent(this, BbqovnService.class);
+        stopService(serviceIntent);
     }
 }

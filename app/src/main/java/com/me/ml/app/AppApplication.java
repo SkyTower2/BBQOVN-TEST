@@ -1,12 +1,15 @@
 package com.me.ml.app;
 
 import android.app.Application;
+import android.content.Intent;
+import android.os.Build;
 
 import com.me.ml.MainActivity;
 import com.me.ml.bluetooth_kit.BluetoothContext;
 import com.me.ml.mvvm.base.BaseApplication;
 
 import com.me.ml.mvvm.crash.CaocConfig;
+import com.me.ml.service.BbqovnService;
 import com.me.ml.utils.log.KLog;
 import com.me.ml.utils.mmkv.MMKVUtils;
 import com.oyml.bluetooth.R;
@@ -40,10 +43,24 @@ public class AppApplication extends BaseApplication {
 
         initCrash();
 
+        startService();
         //内存泄漏检测
 //        if (!LeakCanary.isInAnalyzerProcess(this)) {
 //            LeakCanary.install(this);
 //        }
+    }
+
+    /**
+     * 初始化前台服务
+     */
+    public void startService() {
+        //启动前台服务
+        Intent integer = new Intent(this, BbqovnService.class);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            startForegroundService(integer);
+        } else {
+            startService(integer);
+        }
     }
 
     /**
