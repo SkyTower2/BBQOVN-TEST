@@ -7,10 +7,6 @@ import com.me.ml.bluetooth_kit.utils.BluetoothLog;
 
 import java.util.concurrent.TimeoutException;
 
-/**
- * Created by liwentian on 2017/4/6.
- */
-
 public class Timer {
 
     private static Handler mHandler = new Handler(Looper.getMainLooper());

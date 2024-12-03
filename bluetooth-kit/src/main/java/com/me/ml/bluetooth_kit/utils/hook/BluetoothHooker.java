@@ -9,9 +9,6 @@ import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 import java.util.HashMap;
 
-/**
- * Created by dingjikerbo on 2016/8/27.
- */
 public class BluetoothHooker {
 
     private static final String BLUETOOTH_MANAGER = "bluetooth_manager";

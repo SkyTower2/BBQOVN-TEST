@@ -11,9 +11,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.UUID;
 
-/**
- * Created by dingjikerbo on 2016/9/5.
- */
 public class BleGattService implements Parcelable, Comparable {
 
     private ParcelUuid uuid;

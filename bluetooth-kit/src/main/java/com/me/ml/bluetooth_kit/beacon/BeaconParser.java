@@ -8,9 +8,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by dingjikerbo on 2016/11/16.
+ * 解析 BLE 广播数据
  */
-
 public class BeaconParser {
 
     private byte[] bytes;
@@ -43,22 +42,42 @@ public class BeaconParser {
         return (n & (1 << index)) != 0;
     }
 
+    /**
+     * 解析蓝牙信标广播数据，返回一个 BeaconItem 对象列表
+     *
+     * @param bytes 蓝牙信标广播数据的字节数组
+     * @return 解析后得到的 BeaconItem 对象列表
+     */
     public static List<BeaconItem> parseBeacon(byte[] bytes) {
+        // 创建一个 ArrayList 来存储解析后的 BeaconItem 对象
         ArrayList<BeaconItem> items = new ArrayList<BeaconItem>();
 
+        // 遍历字节数组，解析每个 BeaconItem 对象
         for (int i = 0; i < bytes.length; ) {
+            // 调用 parse 方法解析从索引 i 开始的字节数组，得到一个 BeaconItem 对象
             BeaconItem item = parse(bytes, i);
+            // 如果解析成功（item 不为 null），则将其添加到 items 列表中
             if (item != null) {
                 items.add(item);
+                // 更新索引 i，跳过已经解析的 BeaconItem 对象的长度和类型字节
                 i += item.len + 1;
             } else {
+                // 如果解析失败（item 为 null），则停止解析
                 break;
             }
         }
 
+        // 返回解析后的 BeaconItem 对象列表
         return items;
     }
 
+    /**
+     * 从字节数组中解析出一个 BeaconItem 对象
+     *
+     * @param bytes      字节数组
+     * @param startIndex 开始解析的索引位置
+     * @return 解析后的 BeaconItem 对象，如果解析失败则返回 null
+     */
     private static BeaconItem parse(byte[] bytes, int startIndex) {
         BeaconItem item = null;
 

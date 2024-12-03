@@ -4,9 +4,6 @@ import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;
 import java.nio.ByteBuffer;
 
-/**
- * Created by dingjikerbo on 17/4/16.
- */
 
 public class ACKPacket extends Packet {
 

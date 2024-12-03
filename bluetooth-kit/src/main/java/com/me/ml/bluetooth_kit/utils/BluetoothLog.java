@@ -6,9 +6,6 @@ import java.io.PrintWriter;
 import java.io.StringWriter;
 import java.io.Writer;
 
-/**
- * Created by dingjikerbo on 2015/12/16.
- */
 public class BluetoothLog {
 
     private static final String LOG_TAG = "miio-bluetooth";

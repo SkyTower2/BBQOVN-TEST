@@ -4,9 +4,6 @@ import com.me.ml.bluetooth_kit.utils.StringUtils;
 
 import java.lang.reflect.Field;
 
-/**
- * Created by dingjikerbo on 2016/9/26.
- */
 public class FieldUtils {
 
     public static Field getDeclaredField(final Class<?> cls, final String fieldName, final boolean forceAccess) {

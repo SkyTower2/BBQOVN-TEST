@@ -2,9 +2,6 @@ package com.me.ml.bluetooth_kit.utils;
 
 import java.util.Arrays;
 
-/**
- * Created by dingjikerbo on 2015/12/31.
- */
 public class ByteUtils {
 
     public static final byte[] EMPTY_BYTES = new byte[]{};

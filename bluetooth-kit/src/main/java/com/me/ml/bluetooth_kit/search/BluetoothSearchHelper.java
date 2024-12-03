@@ -13,9 +13,6 @@ import com.me.ml.bluetooth_kit.utils.proxy.ProxyUtils;
 
 import java.lang.reflect.Method;
 
-/**
- * Created by dingjikerbo on 2016/8/28.
- */
 public class BluetoothSearchHelper implements IBluetoothSearchHelper, ProxyInterceptor, Callback {
 
     private BluetoothSearchRequest mCurrentRequest;
@@ -97,7 +94,7 @@ public class BluetoothSearchHelper implements IBluetoothSearchHelper, ProxyInter
 
     @Override
     public boolean onIntercept(Object object, Method method, Object[] args) {
-        mHandler.obtainMessage(0, new ProxyBulk(object, method,args)).sendToTarget();
+        mHandler.obtainMessage(0, new ProxyBulk(object, method, args)).sendToTarget();
         return true;
     }
 

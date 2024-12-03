@@ -8,9 +8,6 @@ import android.os.RemoteException;
 
 import com.me.ml.bluetooth_kit.IResponse;
 
-/**
- * Created by dingjikerbo on 2015/12/31.
- */
 public abstract class BluetoothResponse extends IResponse.Stub implements Handler.Callback {
 
     private static final int MSG_RESPONSE = 1;

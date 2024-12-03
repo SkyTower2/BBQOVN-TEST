@@ -10,10 +10,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
-/**
- * Created by dingjikerbo on 2016/11/17.
- */
-
 public class BleGattCharacter implements Parcelable {
 
     private ParcelUuid uuid;

@@ -13,10 +13,6 @@ import com.me.ml.bluetooth_kit.utils.ListUtils;
 import java.util.Collections;
 import java.util.List;
 
-/**
- * Created by dingjikerbo on 2016/11/25.
- */
-
 public abstract class AbsBluetoothReceiver {
 
     protected Context mContext;

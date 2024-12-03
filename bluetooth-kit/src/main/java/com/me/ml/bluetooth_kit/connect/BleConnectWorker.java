@@ -43,10 +43,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.UUID;
 
-
-/**
- * Created by dingjikerbo on 16/4/8.
- */
 public class BleConnectWorker implements Handler.Callback, IBleConnectWorker, IBluetoothGattResponse, ProxyInterceptor, RuntimeChecker {
 
     private static final int MSG_GATT_RESPONSE = 0x120;
@@ -288,7 +284,7 @@ public class BleConnectWorker implements Handler.Callback, IBleConnectWorker, IB
     }
 
     private void broadcastCharacterChanged(UUID service, UUID character,
-    byte[] value) {
+                                           byte[] value) {
         Intent intent = new Intent(
                 Constants.ACTION_CHARACTER_CHANGED);
         intent.putExtra(Constants.EXTRA_MAC,

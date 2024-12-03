@@ -8,10 +8,6 @@ import com.me.ml.bluetooth_kit.receiver.listener.BluetoothBondListener;
 import java.util.HashMap;
 import java.util.List;
 
-/**
- * Created by liwentian on 2017/1/13.
- */
-
 public class BluetoothClientReceiver {
 
     private HashMap<String, HashMap<String, List<BleNotifyResponse>>> mNotifyResponses;

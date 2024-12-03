@@ -1,9 +1,5 @@
 package com.me.ml.bluetooth_kit.receiver.listener;
 
-/**
- * Created by liwentian on 2017/1/13.
- */
-
 public abstract class BluetoothBondStateChangeListener extends BluetoothReceiverListener {
 
     protected abstract void onBondStateChanged(String mac, int bondState);

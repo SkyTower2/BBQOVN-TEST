@@ -2,10 +2,6 @@ package com.me.ml.bluetooth_kit.connect.listener;
 
 import com.me.ml.bluetooth_kit.receiver.listener.BluetoothClientListener;
 
-/**
- * Created by dingjikerbo on 16/11/26.
- */
-
 public abstract class BleConnectStatusListener extends BluetoothClientListener {
 
     public abstract void onConnectStatusChanged(String mac, int status);

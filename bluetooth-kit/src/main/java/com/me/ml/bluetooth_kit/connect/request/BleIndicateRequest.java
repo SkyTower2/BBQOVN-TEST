@@ -10,10 +10,6 @@ import com.me.ml.bluetooth_kit.connect.response.BleGeneralResponse;
 
 import java.util.UUID;
 
-/**
- * Created by dingjikerbo on 2016/11/1.
- */
-
 public class BleIndicateRequest extends BleRequest implements WriteDescriptorListener {
 
     private UUID mServiceUUID;

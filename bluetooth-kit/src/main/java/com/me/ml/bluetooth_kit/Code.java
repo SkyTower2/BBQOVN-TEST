@@ -1,8 +1,5 @@
 package com.me.ml.bluetooth_kit;
 
-/**
- * Created by dingjikerbo on 2016/10/10.
- */
 public class Code {
 
     public static final int REQUEST_SUCCESS = 0;

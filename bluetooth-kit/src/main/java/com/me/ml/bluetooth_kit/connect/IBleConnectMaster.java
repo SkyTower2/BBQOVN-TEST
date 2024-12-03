@@ -5,9 +5,6 @@ import com.me.ml.bluetooth_kit.connect.response.BleGeneralResponse;
 
 import java.util.UUID;
 
-/**
- * Created by dingjikerbo on 2016/8/24.
- */
 public interface IBleConnectMaster {
 
     void connect(BleConnectOptions options, BleGeneralResponse response);

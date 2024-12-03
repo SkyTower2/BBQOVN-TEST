@@ -1,9 +1,5 @@
 package com.me.ml.bluetooth_kit.channel;
 
-/**
- * Created by liwentian on 2017/4/15.
- */
-
 public class CRC32 {
 
     private static final int[] TABLE = {

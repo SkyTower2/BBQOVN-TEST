@@ -4,9 +4,6 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.Arrays;
 
-/**
- * Created by dingjikerbo on 2016/1/13.
- */
 public class MD5Utils {
 
     public static byte[] MD5_12(String text) {

@@ -7,10 +7,6 @@ import android.os.Parcelable;
 
 import java.util.Arrays;
 
-/**
- * Created by liwentian on 2017/3/24.
- */
-
 public class BleGattDescriptor implements Parcelable {
 
     private ParcelUuid mUuid;

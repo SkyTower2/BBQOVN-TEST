@@ -7,9 +7,6 @@ import android.os.IBinder;
 
 import com.me.ml.bluetooth_kit.utils.BluetoothLog;
 
-/**
- * Created by dingjikerbo on 16/4/8.
- */
 public class BluetoothService extends Service {
 
     private static Context mContext;

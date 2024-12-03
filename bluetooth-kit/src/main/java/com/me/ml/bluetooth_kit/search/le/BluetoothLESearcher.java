@@ -11,9 +11,6 @@ import com.me.ml.bluetooth_kit.search.response.BluetoothSearchResponse;
 import com.me.ml.bluetooth_kit.utils.BluetoothLog;
 import com.me.ml.bluetooth_kit.utils.BluetoothUtils;
 
-/**
- * @author dingjikerbo
- */
 public class BluetoothLESearcher extends BluetoothSearcher {
 
 	private BluetoothLESearcher() {

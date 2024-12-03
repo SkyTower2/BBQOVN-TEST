@@ -5,9 +5,6 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import android.text.TextUtils;
 
-/**
- * Created by dingjikerbo on 2016/8/28.
- */
 public class SearchResult implements Parcelable {
 
     public BluetoothDevice device;

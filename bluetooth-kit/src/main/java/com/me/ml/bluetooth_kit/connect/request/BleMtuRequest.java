@@ -7,10 +7,6 @@ import com.me.ml.bluetooth_kit.Constants;
 import com.me.ml.bluetooth_kit.connect.listener.RequestMtuListener;
 import com.me.ml.bluetooth_kit.connect.response.BleGeneralResponse;
 
-/**
- * Created by fuhao on 2017/8/24.
- */
-
 public class BleMtuRequest extends BleRequest implements RequestMtuListener {
 
     private int mMtu;

@@ -3,10 +3,6 @@ package com.me.ml.bluetooth_kit.connect.request;
 import com.me.ml.bluetooth_kit.Code;
 import com.me.ml.bluetooth_kit.connect.response.BleGeneralResponse;
 
-/**
- * Created by liwentian on 2017/2/15.
- */
-
 public class BleRefreshCacheRequest extends BleRequest {
 
     public BleRefreshCacheRequest(BleGeneralResponse response) {

@@ -16,9 +16,6 @@ import com.me.ml.bluetooth_kit.search.response.SearchResponse;
 
 import java.util.UUID;
 
-/**
- * Created by dingjikerbo on 2016/8/25.
- */
 public interface IBluetoothClient {
 
     void connect(String mac, BleConnectOptions options, BleConnectResponse response);

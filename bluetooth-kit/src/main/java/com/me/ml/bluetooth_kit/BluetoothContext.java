@@ -4,10 +4,6 @@ import android.content.Context;
 import android.os.Handler;
 import android.os.Looper;
 
-/**
- * Created by dingjikerbo on 2016/10/26.
- */
-
 public class BluetoothContext {
 
     private static Context mContext;

@@ -14,9 +14,6 @@ import com.me.ml.bluetooth_kit.utils.proxy.ProxyUtils;
 import java.lang.reflect.Method;
 import java.util.UUID;
 
-/**
- * Created by dingjikerbo on 16/8/24.
- */
 public class BleConnectMaster implements IBleConnectMaster, ProxyInterceptor, Callback {
 
     private Handler mHandler;

@@ -11,10 +11,6 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.UUID;
 
-/**
- * Created by dingjikerbo on 16/11/26.
- */
-
 public class BleCharacterChangeReceiver extends AbsBluetoothReceiver {
 
     private static final String[] ACTIONS = {

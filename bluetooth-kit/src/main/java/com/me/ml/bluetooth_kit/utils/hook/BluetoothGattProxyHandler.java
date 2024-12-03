@@ -5,9 +5,6 @@ import com.me.ml.bluetooth_kit.utils.BluetoothLog;
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 
-/**
- * Created by dingjikerbo on 16/9/2.
- */
 public class BluetoothGattProxyHandler implements InvocationHandler {
 
     private Object bluetoothGatt;

@@ -2,10 +2,6 @@ package com.me.ml.bluetooth_kit.channel;
 
 import com.me.ml.bluetooth_kit.utils.ByteUtils;
 
-/**
- * Created by liwentian on 2017/4/15.
- */
-
 public class CRC16 {
 
     private static final int[] TABLE = {

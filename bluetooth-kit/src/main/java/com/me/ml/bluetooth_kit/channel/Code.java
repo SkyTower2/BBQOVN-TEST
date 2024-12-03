@@ -1,9 +1,5 @@
 package com.me.ml.bluetooth_kit.channel;
 
-/**
- * Created by liwentian on 2017/3/20.
- */
-
 public class Code {
 
     public static final int SUCCESS = 0;

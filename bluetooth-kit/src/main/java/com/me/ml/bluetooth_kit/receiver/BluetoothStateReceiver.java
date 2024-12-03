@@ -11,10 +11,6 @@ import com.me.ml.bluetooth_kit.utils.BluetoothLog;
 import java.util.Arrays;
 import java.util.List;
 
-/**
- * Created by dingjikerbo on 2016/11/25.
- */
-
 public class BluetoothStateReceiver extends AbsBluetoothReceiver {
 
     private static final String[] ACTIONS = {

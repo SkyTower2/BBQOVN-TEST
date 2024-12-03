@@ -5,10 +5,6 @@ import com.me.ml.bluetooth_kit.model.BleGattProfile;
 
 import java.util.UUID;
 
-/**
- * Created by dingjikerbo on 2016/11/16.
- */
-
 public interface IBleConnectWorker {
 
     boolean openGatt();

@@ -1,9 +1,5 @@
 package com.me.ml.bluetooth_kit.receiver.listener;
 
-/**
- * Created by dingjikerbo on 17/1/14.
- */
-
 public abstract class BluetoothClientListener extends AbsBluetoothListener {
 
     @Override

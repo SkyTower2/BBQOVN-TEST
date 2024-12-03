@@ -11,9 +11,6 @@ import com.me.ml.bluetooth_kit.utils.BluetoothUtils;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by dingjikerbo on 2016/8/28.
- */
 public class SearchRequest implements Parcelable {
 
     private List<SearchTask> tasks;

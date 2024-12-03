@@ -11,9 +11,6 @@ import java.lang.ref.WeakReference;
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 
-/**
- * Created by dingjikerbo on 2016/9/18.
- */
 public class ProxyInvocationHandler implements InvocationHandler, ProxyInterceptor, Callback {
 
     private Object subject;

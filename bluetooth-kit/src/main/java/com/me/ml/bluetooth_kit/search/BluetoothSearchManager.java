@@ -11,9 +11,6 @@ import android.os.Bundle;
 import com.me.ml.bluetooth_kit.connect.response.BleGeneralResponse;
 import com.me.ml.bluetooth_kit.search.response.BluetoothSearchResponse;
 
-/**
- * Created by dingjikerbo on 2016/8/28.
- */
 public class BluetoothSearchManager {
 
     public static void search(SearchRequest request, final BleGeneralResponse response) {

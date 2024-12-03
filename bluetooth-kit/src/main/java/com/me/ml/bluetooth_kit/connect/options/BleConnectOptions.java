@@ -3,9 +3,6 @@ package com.me.ml.bluetooth_kit.connect.options;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-/**
- * Created by dingjikerbo on 16/9/28.
- */
 public class BleConnectOptions implements Parcelable {
 
     private int connectRetry;
@@ -20,7 +17,7 @@ public class BleConnectOptions implements Parcelable {
 
         private static final int DEFAULT_CONNECT_RETRY = 0;
         private static final int DEFAULT_SERVICE_DISCOVER_RETRY = 0;
-        private static final int DEFAULT_CONNECT_TIMEOUT=  30000;
+        private static final int DEFAULT_CONNECT_TIMEOUT = 30000;
         private static final int DEFAULT_SERVICE_DISCOVER_TIMEOUT = 30000;
 
         private int connectRetry = DEFAULT_CONNECT_RETRY;

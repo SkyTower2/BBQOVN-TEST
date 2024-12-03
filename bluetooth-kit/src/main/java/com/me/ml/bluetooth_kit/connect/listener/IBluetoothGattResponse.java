@@ -3,9 +3,6 @@ package com.me.ml.bluetooth_kit.connect.listener;
 import android.bluetooth.BluetoothGattCharacteristic;
 import android.bluetooth.BluetoothGattDescriptor;
 
-/**
- * Created by dingjikerbo on 2016/8/25.
- */
 public interface IBluetoothGattResponse {
 
     void onConnectionStateChange(int status, int newState);

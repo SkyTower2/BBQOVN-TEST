@@ -9,9 +9,6 @@ import com.me.ml.bluetooth_kit.connect.response.BleGeneralResponse;
 import java.util.HashMap;
 import java.util.UUID;
 
-/**
- * Created by dingjikerbo on 2016/8/24.
- */
 public class BleConnectManager {
 
     private static final String TAG = BleConnectManager.class.getSimpleName();

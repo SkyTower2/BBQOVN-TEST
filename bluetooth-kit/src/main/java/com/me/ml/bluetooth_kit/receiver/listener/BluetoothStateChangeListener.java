@@ -3,10 +3,6 @@ package com.me.ml.bluetooth_kit.receiver.listener;
 import com.me.ml.bluetooth_kit.BluetoothClientImpl;
 import com.me.ml.bluetooth_kit.Constants;
 
-/**
- * Created by dingjikerbo on 2016/11/25.
- */
-
 public abstract class BluetoothStateChangeListener extends BluetoothReceiverListener {
 
     protected abstract void onBluetoothStateChanged(int prevState, int curState);

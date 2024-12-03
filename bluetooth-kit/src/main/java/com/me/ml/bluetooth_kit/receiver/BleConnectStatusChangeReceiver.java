@@ -11,10 +11,6 @@ import com.me.ml.bluetooth_kit.utils.BluetoothLog;
 import java.util.Arrays;
 import java.util.List;
 
-/**
- * Created by dingjikerbo on 16/11/26.
- */
-
 public class BleConnectStatusChangeReceiver extends AbsBluetoothReceiver {
 
     private static final String[] ACTIONS = {

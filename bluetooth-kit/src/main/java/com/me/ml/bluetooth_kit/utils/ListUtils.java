@@ -3,9 +3,6 @@ package com.me.ml.bluetooth_kit.utils;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by dingjikerbo on 2015/12/31.
- */
 public class ListUtils {
 
     public static boolean isEmpty(List<?> list) {

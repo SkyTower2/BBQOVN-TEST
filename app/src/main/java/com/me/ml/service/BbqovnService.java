@@ -17,6 +17,7 @@ import android.text.TextUtils;
 import androidx.annotation.Nullable;
 
 import com.me.ml.MainActivity;
+import com.me.ml.utils.log.KLog;
 import com.oyml.bluetooth.R;
 
 /**
@@ -110,5 +111,10 @@ public class BbqovnService extends Service {
             e.printStackTrace();
         }
         return "";
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
     }
 }

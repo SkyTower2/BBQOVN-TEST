@@ -4,9 +4,6 @@ import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
-/**
- * Created by dingjikerbo on 2016/8/27.
- */
 public class HookUtils {
 
     public static Class<?> getClass(String name) {

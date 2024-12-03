@@ -1,9 +1,5 @@
 package com.me.ml.bluetooth_kit.channel;
 
-/**
- * Created by dingjikerbo on 17/4/14.
- */
-
 public enum ChannelEvent {
 
 	/**

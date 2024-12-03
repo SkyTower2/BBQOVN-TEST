@@ -41,9 +41,6 @@ import com.me.ml.bluetooth_kit.utils.BluetoothLog;
 
 import java.util.UUID;
 
-/**
- * Created by dingjikerbo on 2015/10/29.
- */
 public class BluetoothServiceImpl extends IBluetoothService.Stub implements Handler.Callback {
 
     private static BluetoothServiceImpl sInstance;

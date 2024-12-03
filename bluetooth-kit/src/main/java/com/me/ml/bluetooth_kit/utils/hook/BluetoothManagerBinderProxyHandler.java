@@ -10,9 +10,6 @@ import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 
-/**
- * Created by dingjikerbo on 16/9/2.
- */
 public class BluetoothManagerBinderProxyHandler implements InvocationHandler {
 
     private IBinder iBinder;

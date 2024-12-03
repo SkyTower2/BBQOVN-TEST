@@ -2,10 +2,6 @@ package com.me.ml.bluetooth_kit.channel.packet;
 
 import java.nio.ByteBuffer;
 
-/**
- * Created by dingjikerbo on 17/4/15.
- */
-
 public class CTRPacket extends Packet {
 
 	private int frameCount;

@@ -7,9 +7,6 @@ import android.bluetooth.BluetoothGattDescriptor;
 
 import com.me.ml.bluetooth_kit.connect.listener.IBluetoothGattResponse;
 
-/**
- * Created by dingjikerbo on 2016/8/25.
- */
 public class BluetoothGattResponse extends BluetoothGattCallback {
 
     private IBluetoothGattResponse response;

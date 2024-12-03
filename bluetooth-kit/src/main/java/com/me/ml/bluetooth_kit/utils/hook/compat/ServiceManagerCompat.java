@@ -8,9 +8,6 @@ import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.util.HashMap;
 
-/**
- * Created by dingjikerbo on 2016/8/27.
- */
 public class ServiceManagerCompat {
 
     private static Class<?> serviceManager;

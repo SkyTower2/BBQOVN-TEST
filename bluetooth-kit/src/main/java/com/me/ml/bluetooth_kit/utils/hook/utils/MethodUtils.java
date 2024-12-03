@@ -3,9 +3,6 @@ package com.me.ml.bluetooth_kit.utils.hook.utils;
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
 
-/**
- * Created by dingjikerbo on 2016/9/26.
- */
 public class MethodUtils {
 
     public static Method getAccessibleMethod(final Class<?> cls, final String methodName,

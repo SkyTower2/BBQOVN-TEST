@@ -83,6 +83,10 @@
                 android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
                 android:value="Obtain the debugging logs of the current application" />
         </service>
+
+<!--        <service-->
+<!--            android:name="com.me.ml.service.ForegroundCoreService"-->
+<!--            android:foregroundServiceType="specialUse" />-->
     </application>
 
     <!-- Android 11 软件包可见性适配 -->

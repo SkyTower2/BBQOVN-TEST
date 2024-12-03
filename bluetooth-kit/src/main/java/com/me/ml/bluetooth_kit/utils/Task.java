@@ -7,9 +7,6 @@ import android.os.Looper;
 import java.util.concurrent.Executor;
 import java.util.concurrent.FutureTask;
 
-/**
- * Created by dingjikerbo on 2016/8/24.
- */
 public abstract class Task extends AsyncTask<Void, Void, Void> {
 
     public abstract void doInBackground();

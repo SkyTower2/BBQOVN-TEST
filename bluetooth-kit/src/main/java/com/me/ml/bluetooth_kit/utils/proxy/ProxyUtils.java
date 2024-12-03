@@ -2,9 +2,6 @@ package com.me.ml.bluetooth_kit.utils.proxy;
 
 import java.lang.reflect.Proxy;
 
-/**
- * Created by dingjikerbo on 2016/8/23.
- */
 public class ProxyUtils {
 
     public static <T> T getProxy(Object object, Class<?>[] intfs, ProxyInterceptor interceptor, boolean weakRef, boolean postUI) {

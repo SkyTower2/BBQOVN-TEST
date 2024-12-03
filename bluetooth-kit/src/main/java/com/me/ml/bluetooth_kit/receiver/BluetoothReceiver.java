@@ -18,10 +18,6 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
-/**
- * Created by dingjikerbo on 2016/11/25.
- */
-
 public class BluetoothReceiver extends BroadcastReceiver implements IBluetoothReceiver, Handler.Callback {
 
     private static final int MSG_REGISTER = 1;

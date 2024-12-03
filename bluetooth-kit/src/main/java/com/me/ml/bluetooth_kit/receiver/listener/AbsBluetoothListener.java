@@ -4,10 +4,6 @@ import android.os.Handler;
 import android.os.Looper;
 import android.os.Message;
 
-/**
- * Created by dingjikerbo on 17/1/14.
- */
-
 public abstract class AbsBluetoothListener implements Handler.Callback {
 
     private static final int MSG_INVOKE = 1;

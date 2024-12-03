@@ -1,8 +1,5 @@
 package com.me.ml.bluetooth_kit.connect.listener;
 
-/**
- * Created by dingjikerbo on 16/8/25.
- */
 public interface GattResponseListener {
 
     int GATT_RESP_SERVICE_DISCOVER = 1;

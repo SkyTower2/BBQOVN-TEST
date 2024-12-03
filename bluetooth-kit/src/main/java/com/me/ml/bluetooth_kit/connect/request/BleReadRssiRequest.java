@@ -7,9 +7,6 @@ import com.me.ml.bluetooth_kit.Constants;
 import com.me.ml.bluetooth_kit.connect.listener.ReadRssiListener;
 import com.me.ml.bluetooth_kit.connect.response.BleGeneralResponse;
 
-/**
- * Created by dingjikerbo on 2015/12/23.
- */
 public class BleReadRssiRequest extends BleRequest implements ReadRssiListener {
 
     public BleReadRssiRequest(BleGeneralResponse response) {
@@ -48,7 +45,7 @@ public class BleReadRssiRequest extends BleRequest implements ReadRssiListener {
     @Override
     public void onReadRemoteRssi(int rssi, int status) {
         stopRequestTiming();
-        
+
         if (status == BluetoothGatt.GATT_SUCCESS) {
             putIntExtra(Constants.EXTRA_RSSI, rssi);
             onRequestCompleted(Code.REQUEST_SUCCESS);

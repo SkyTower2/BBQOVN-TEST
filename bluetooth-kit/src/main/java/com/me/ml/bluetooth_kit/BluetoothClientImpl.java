@@ -83,9 +83,6 @@ import java.util.List;
 import java.util.UUID;
 import java.util.concurrent.CountDownLatch;
 
-/**
- * Created by dingjikerbo on 16/4/8.
- */
 public class BluetoothClientImpl implements IBluetoothClient, ProxyInterceptor, Callback {
 
     private static final int MSG_INVOKE_PROXY = 1;
