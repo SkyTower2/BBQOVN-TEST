@@ -10,6 +10,7 @@ import com.me.ml.mvvm.base.BaseApplication;
 
 import com.me.ml.mvvm.crash.CaocConfig;
 import com.me.ml.service.BbqovnService;
+import com.me.ml.utils.CrashHandler;
 import com.me.ml.utils.log.KLog;
 import com.me.ml.utils.mmkv.MMKVUtils;
 import com.oyml.bluetooth.R;
@@ -42,6 +43,9 @@ public class AppApplication extends BaseApplication {
         KLog.init(true);
 
         initCrash();
+
+        //初始化崩溃异常捕获
+        CrashHandler.getInstance(this);
 
         startService();
         //内存泄漏检测
