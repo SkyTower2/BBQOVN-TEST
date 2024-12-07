@@ -1,0 +1,42 @@
+plugins {
+    id 'com.android.library'
+}
+
+android {
+    namespace 'com.me.ml.webview'
+    compileSdk 34
+
+    defaultConfig {
+        minSdk 26
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation rootProject.ext.support["support-v4"]
+    implementation rootProject.ext.support["appcompat-v7"]
+    implementation rootProject.ext.support["recyclerview-v7"]
+    implementation rootProject.ext.support["material"]
+
+
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1" // 替换为最新版本
+    implementation "androidx.fragment:fragment-ktx:1.6.1" // 提供对 Fragment 的扩展
+
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
+    implementation 'com.squareup.okhttp3:okhttp:4.2.2'
+}
