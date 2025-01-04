@@ -1,4 +1,4 @@
-package com.peakmain.webview.viewmodel
+package com.me.ml.webview.viewmodel
 
 import android.app.Activity
 import android.view.View
@@ -6,7 +6,7 @@ import android.webkit.WebView
 import android.widget.FrameLayout
 import androidx.annotation.LayoutRes
 import androidx.lifecycle.ViewModel
-import com.peakmain.webview.R
+import com.me.ml.webview.R
 import com.me.ml.webview.activity.WebViewActivity
 import com.me.ml.webview.interfaces.LoadingViewConfig
 import com.me.ml.webview.manager.WebViewController

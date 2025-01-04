@@ -1,4 +1,4 @@
-package com.me.ml.webview.utils
+package com.me.ml.webview.webutils
 
 import java.lang.reflect.Field
 

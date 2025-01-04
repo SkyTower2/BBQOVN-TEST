@@ -1,4 +1,4 @@
-package com.me.ml.webview.utils
+package com.me.ml.webview.webutils
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -19,11 +19,11 @@ import java.io.InputStream
 import java.security.MessageDigest
 import java.util.Locale
 
-class WebViewUtils private constructor() {
+class WebViewMLUtils private constructor() {
     companion object {
         @JvmStatic
         val instance by lazy(LazyThreadSafetyMode.SYNCHRONIZED) {
-            WebViewUtils()
+            WebViewMLUtils()
         }
     }
 

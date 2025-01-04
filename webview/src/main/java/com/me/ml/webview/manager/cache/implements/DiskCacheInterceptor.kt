@@ -6,9 +6,9 @@ import com.me.ml.webview.bean.cache.WebResource
 import com.me.ml.webview.manager.cache.CacheConfig
 import com.me.ml.webview.manager.cache.CacheWebViewManager
 import com.me.ml.webview.manager.cache.interfaces.ICacheInterceptor
-import com.me.ml.webview.utils.LogWebViewUtils
-import com.me.ml.webview.utils.WebViewUtils
-import com.me.ml.webview.utils.disk.DiskLruCache
+import com.me.ml.webview.webutils.LogWebViewUtils
+import com.me.ml.webview.webutils.WebViewMLUtils
+import com.me.ml.webview.webutils.disk.DiskLruCache
 import okhttp3.Headers
 import okio.buffer
 import okio.sink
@@ -93,8 +93,8 @@ class DiskCacheInterceptor(val context: Context?) : ICacheInterceptor {
         if (resource == null) {
             return false
         }
-        val contentType: String? = WebViewUtils.instance.getContentType(resource)
-        return contentType != null && WebViewUtils.instance.isCacheContentType(contentType)
+        val contentType: String? = WebViewMLUtils.instance.getContentType(resource)
+        return contentType != null && WebViewMLUtils.instance.isCacheContentType(contentType)
     }
 
 
@@ -121,7 +121,7 @@ class DiskCacheInterceptor(val context: Context?) : ICacheInterceptor {
                     builder.add(line)
                 }
             }
-            headers = WebViewUtils.instance.generateHeadersMap(builder.build())
+            headers = WebViewMLUtils.instance.generateHeadersMap(builder.build())
 
             //获取到body
             val inputStream = snapshot.getInputStream(1)
@@ -129,7 +129,7 @@ class DiskCacheInterceptor(val context: Context?) : ICacheInterceptor {
                 val webResource = WebResource()
                 webResource.message = message
                 webResource.responseCode = Integer.parseInt(responseCode)
-                webResource.originBytes = WebViewUtils.instance.streamToBytes(inputStream)
+                webResource.originBytes = WebViewMLUtils.instance.streamToBytes(inputStream)
                 webResource.isModified = false
                 webResource.responseHeaders = headers
                 return webResource

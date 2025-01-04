@@ -1,4 +1,4 @@
-package com.me.ml.webview.utils
+package com.me.ml.webview.webutils
 
 import com.me.ml.webview.annotation.Handler
 import com.me.ml.webview.annotation.HandlerMethod

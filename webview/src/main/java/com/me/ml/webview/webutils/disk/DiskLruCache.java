@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package com.me.ml.webview.utils.disk;
+package com.me.ml.webview.webutils.disk;
 
 
-import com.me.ml.webview.utils.WebViewUtils;
+import com.me.ml.webview.webutils.WebViewMLUtils;
 
 import java.io.BufferedWriter;
 import java.io.Closeable;
@@ -665,7 +665,7 @@ public final class DiskLruCache implements Closeable {
      */
     public void delete() throws IOException {
         close();
-        WebViewUtils.getInstance().deleteContents(directory);
+        WebViewMLUtils.getInstance().deleteContents(directory);
     }
 
     private void validateKey(String key) {

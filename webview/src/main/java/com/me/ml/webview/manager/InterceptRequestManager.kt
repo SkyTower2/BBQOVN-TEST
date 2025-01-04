@@ -11,7 +11,7 @@ import com.bumptech.glide.request.RequestListener
 import com.bumptech.glide.request.target.Target
 import com.me.ml.webview.bean.cache.CacheRequest
 import com.me.ml.webview.bean.cache.WebResource
-import com.me.ml.webview.utils.LogWebViewUtils
+import com.me.ml.webview.webutils.LogWebViewUtils
 import java.io.ByteArrayOutputStream
 
 class InterceptRequestManager private constructor() {

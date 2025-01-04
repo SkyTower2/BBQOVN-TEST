@@ -1,4 +1,4 @@
-package com.me.ml.webview.utils
+package com.me.ml.webview.webutils
 
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder

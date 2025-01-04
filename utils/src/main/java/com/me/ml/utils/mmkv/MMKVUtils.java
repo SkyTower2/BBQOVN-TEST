@@ -7,6 +7,7 @@ import com.tencent.mmkv.MMKV;
 /**
  * @author ml
  * @date 2024-11-07 18:10
+ * @description: MMKV工具类
  */
 public class MMKVUtils {
     private static MMKV mmkv;

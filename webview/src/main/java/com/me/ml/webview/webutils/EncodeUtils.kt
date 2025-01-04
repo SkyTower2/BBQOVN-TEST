@@ -1,4 +1,4 @@
-package com.me.ml.webview.utils
+package com.me.ml.webview.webutils
 
 import android.os.Build
 import android.text.Html

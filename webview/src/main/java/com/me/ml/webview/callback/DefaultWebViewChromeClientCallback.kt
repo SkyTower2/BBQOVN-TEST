@@ -4,7 +4,7 @@ import android.net.Uri
 import android.webkit.ValueCallback
 import android.webkit.WebView
 import com.me.ml.webview.fragment.WebViewFragment
-import com.me.ml.webview.utils.LogWebViewUtils
+import com.me.ml.webview.webutils.LogWebViewUtils
 
 class DefaultWebViewChromeClientCallback : WebViewChromeClientCallback {
     override fun onReceivedTitle(view: WebView?, title: String?, fragment: WebViewFragment?) {

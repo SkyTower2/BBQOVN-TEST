@@ -17,6 +17,7 @@ import android.webkit.WebViewClient.ERROR_IO
 import android.webkit.WebViewClient.ERROR_TIMEOUT
 import android.widget.FrameLayout
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.viewModels
 import com.me.ml.webview.WebViewJsUtils
 import com.me.ml.webview.annotation.CacheMode
 import com.me.ml.webview.bean.WebViewConfigBean
@@ -31,10 +32,10 @@ import com.me.ml.webview.manager.WebViewManager
 import com.me.ml.webview.manager.WebViewPool
 import com.me.ml.webview.sealed.HandleResult
 import com.me.ml.webview.sealed.LoadingWebViewState
-import com.me.ml.webview.utils.LogWebViewUtils
-import com.me.ml.webview.utils.WebViewUtils
+import com.me.ml.webview.webutils.LogWebViewUtils
+import com.me.ml.webview.webutils.WebViewMLUtils
 import com.peakmain.webview.view.PkWebView
-import com.peakmain.webview.viewmodel.WebViewFragmentViewModel
+import com.me.ml.webview.viewmodel.WebViewFragmentViewModel
 
 open class WebViewFragment : Fragment() {
     protected var mFileUploadCallbackFirst: ValueCallback<Uri>? = null
@@ -191,7 +192,7 @@ open class WebViewFragment : Fragment() {
     fun onReceivedError(view: WebView?, err: Int, des: String?, failingUrl: String?) {
         val context = context ?: return
         val webViewParams = mWebView?.getWebViewParams()
-        WebViewUtils.instance.checkNetworkInfo(context.applicationContext, {
+        WebViewMLUtils.instance.checkNetworkInfo(context.applicationContext, {
             //当前没有网
             LogWebViewUtils.e("当前没有网络")
             showNoNetwork(webViewParams, failingUrl)

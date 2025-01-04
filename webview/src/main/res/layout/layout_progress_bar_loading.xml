@@ -11,9 +11,9 @@
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toTopOf="@id/tv_loading"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintVertical_chainStyle="packed"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
 
     <TextView
         android:id="@+id/tv_loading"

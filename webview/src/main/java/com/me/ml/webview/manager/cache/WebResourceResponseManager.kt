@@ -6,7 +6,7 @@ import android.text.TextUtils
 import android.webkit.WebResourceRequest
 import android.webkit.WebResourceResponse
 import com.me.ml.webview.bean.cache.CacheRequest
-import com.me.ml.webview.utils.WebViewUtils
+import com.me.ml.webview.webutils.WebViewMLUtils
 import com.peakmain.webview.view.PkWebView
 import java.io.ByteArrayInputStream
 import java.util.Locale
@@ -29,7 +29,7 @@ class WebResourceResponseManager private constructor() {
                 }
             }
             //资源类型
-            val mimeType = WebViewUtils.instance.getMimeType(url)
+            val mimeType = WebViewMLUtils.instance.getMimeType(url)
             val cacheRequest = CacheRequest()
             cacheRequest.url = url
             cacheRequest.mimeType = mimeType
@@ -80,7 +80,7 @@ class WebResourceResponseManager private constructor() {
                 val responseCode = response.responseCode
                 var message = response.message
                 if (TextUtils.isEmpty(message)) {
-                    message = WebViewUtils.instance.getMessage(responseCode)
+                    message = WebViewMLUtils.instance.getMessage(responseCode)
                 }
                 return WebResourceResponse(
                     mineType,

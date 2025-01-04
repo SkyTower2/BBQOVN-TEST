@@ -6,8 +6,8 @@ import android.webkit.WebView
 import com.me.ml.webview.bean.WebViewEvent
 import com.me.ml.webview.callback.HandleUrlParamsCallback
 import com.me.ml.webview.sealed.HandleResult
-import com.me.ml.webview.utils.LogWebViewUtils
-import com.me.ml.webview.utils.WebViewEventManager
+import com.me.ml.webview.webutils.LogWebViewUtils
+import com.me.ml.webview.webutils.WebViewEventManager
 
 internal class WebViewHandle(
     val webView: WebView?,

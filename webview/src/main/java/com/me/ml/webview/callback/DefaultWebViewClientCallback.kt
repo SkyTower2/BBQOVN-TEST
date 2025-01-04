@@ -10,7 +10,7 @@ import android.webkit.WebView
 import com.me.ml.webview.fragment.WebViewFragment
 import com.me.ml.webview.manager.H5UtilsParams
 import com.me.ml.webview.manager.cache.WebResourceResponseManager
-import com.me.ml.webview.utils.LogWebViewUtils
+import com.me.ml.webview.webutils.LogWebViewUtils
 import com.peakmain.webview.view.PkWebView
 
 class DefaultWebViewClientCallback : WebViewClientCallback {

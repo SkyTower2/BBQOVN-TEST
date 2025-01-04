@@ -1,7 +1,6 @@
 package com.me.ml.webview.bean.cache;
 
-
-import com.me.ml.webview.utils.WebViewUtils;
+import com.me.ml.webview.webutils.WebViewMLUtils;
 
 import java.util.Locale;
 import java.util.Map;
@@ -40,7 +39,7 @@ public class CacheRequest {
     public void setUrl(String url) {
         this.url = url;
         // md5 进入DiskLruCache 缓存时必须为小写字母
-        this.key = WebViewUtils.getInstance().getMd5(url, true).toLowerCase(Locale.ROOT);
+        this.key = WebViewMLUtils.getInstance().getMd5(url, true).toLowerCase(Locale.ROOT);
     }
 
     public String getMimeType() {

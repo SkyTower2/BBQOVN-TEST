@@ -4,7 +4,7 @@ import android.util.LruCache
 import com.me.ml.webview.bean.cache.WebResource
 import com.me.ml.webview.manager.cache.MemorySizeCalculator
 import com.me.ml.webview.manager.cache.interfaces.ICacheInterceptor
-import com.me.ml.webview.utils.LogWebViewUtils
+import com.me.ml.webview.webutils.LogWebViewUtils
 
 /**
  * 内存缓存拦截器

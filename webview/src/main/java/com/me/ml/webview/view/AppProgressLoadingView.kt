@@ -1,4 +1,4 @@
-package com.peakmain.webview.view
+package com.me.ml.webview.view
 
 import android.content.Context
 import android.util.AttributeSet
@@ -6,14 +6,8 @@ import android.view.View
 import android.widget.FrameLayout
 import android.widget.ProgressBar
 import android.widget.TextView
-import com.peakmain.webview.R
+import com.me.ml.webview.R
 
-/**
- * author ：Peakmain
- * createTime：2023/04/20
- * mail:2726449200@qq.com
- * describe：
- */
 class AppProgressLoadingView @JvmOverloads constructor(
     context: Context,
     attrs: AttributeSet? = null,

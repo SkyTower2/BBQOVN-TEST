@@ -3,7 +3,7 @@ package com.me.ml.webview.manager
 import android.content.Context
 import com.me.ml.webview.bean.cache.CacheRequest
 import com.me.ml.webview.bean.cache.WebResource
-import com.me.ml.webview.utils.WebViewUtils
+import com.me.ml.webview.webutils.WebViewMLUtils
 import okhttp3.Cache
 import okhttp3.Interceptor
 import okhttp3.OkHttpClient
@@ -78,10 +78,10 @@ internal class OKHttpManager(context: Context) {
                     remoteResource.originBytes = responseBody.bytes()
                 }
                 remoteResource.responseHeaders =
-                    WebViewUtils.instance.generateHeadersMap(response.headers)
-                val contentType = WebViewUtils.instance.getContentType(remoteResource)
+                    WebViewMLUtils.instance.generateHeadersMap(response.headers)
+                val contentType = WebViewMLUtils.instance.getContentType(remoteResource)
                 if (contentType != null) {
-                    if (!WebViewUtils.instance.isCacheContentType(contentType)) {
+                    if (!WebViewMLUtils.instance.isCacheContentType(contentType)) {
                         return null
                     }
                 }

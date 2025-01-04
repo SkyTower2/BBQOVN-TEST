@@ -3,7 +3,7 @@ package com.me.ml.webview.implement.loading
 import android.content.Context
 import android.view.View
 import com.me.ml.webview.interfaces.LoadingViewConfig
-import com.peakmain.webview.view.AppProgressLoadingView
+import com.me.ml.webview.view.AppProgressLoadingView
 
 class ProgressLoadingConfigImpl : LoadingViewConfig {
     private var mAppProgressLoadingView: AppProgressLoadingView? = null

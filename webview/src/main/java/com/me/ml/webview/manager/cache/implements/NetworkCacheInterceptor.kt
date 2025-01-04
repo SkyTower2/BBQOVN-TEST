@@ -5,8 +5,8 @@ import com.me.ml.webview.bean.cache.WebResource
 import com.me.ml.webview.manager.InterceptRequestManager
 import com.me.ml.webview.manager.OKHttpManager
 import com.me.ml.webview.manager.cache.interfaces.ICacheInterceptor
-import com.me.ml.webview.utils.LogWebViewUtils
-import com.me.ml.webview.utils.WebViewUtils
+import com.me.ml.webview.webutils.LogWebViewUtils
+import com.me.ml.webview.webutils.WebViewMLUtils
 
 /**
  * 网络缓存拦截器
@@ -16,9 +16,9 @@ class NetworkCacheInterceptor(val context: Context?) : ICacheInterceptor {
         val request = chain.request()
 
         val mimeType = request.mimeType
-        val isCacheContentType = WebViewUtils.instance.isCacheContentType(mimeType)
+        val isCacheContentType = WebViewMLUtils.instance.isCacheContentType(mimeType)
         return context?.let {
-            if (WebViewUtils.instance.isImageType(request.mimeType)) {
+            if (WebViewMLUtils.instance.isImageType(request.mimeType)) {
                 InterceptRequestManager.instance.loadImage(context, request)
             } else {
                 LogWebViewUtils.i("开始网络缓存:${request.url}")

@@ -1,7 +1,7 @@
 package com.me.ml.webview.manager.cache
 
 import android.content.Context
-import com.me.ml.webview.utils.WebViewUtils
+import com.me.ml.webview.webutils.WebViewMLUtils
 import java.io.File
 
 class CacheConfig private constructor() {
@@ -99,7 +99,7 @@ class CacheConfig private constructor() {
 
         init {
             cacheDir = context.cacheDir.toString() + File.separator + CACHE_DIR_NAME
-            version = WebViewUtils.instance.getVersionCode(context).toInt()
+            version = WebViewMLUtils.instance.getVersionCode(context).toInt()
         }
     }
 }

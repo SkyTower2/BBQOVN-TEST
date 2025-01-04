@@ -1,7 +1,7 @@
 package com.me.ml.webview
 
 import android.webkit.WebView
-import com.me.ml.webview.utils.EncodeUtils
+import com.me.ml.webview.webutils.EncodeUtils
 
 class WebViewJsUtils private constructor(val jsNameSpace: String) {
     companion object {

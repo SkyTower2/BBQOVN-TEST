@@ -7,7 +7,7 @@ import android.widget.FrameLayout
 import androidx.lifecycle.ViewModel
 import com.me.ml.webview.bean.WebViewConfigBean
 import com.me.ml.webview.manager.H5UtilsParams
-import com.me.ml.webview.utils.StatusBarUtils
+import com.me.ml.webview.webutils.StatusBarUtils
 import com.me.ml.webview.sealed.StatusBarState
 import java.lang.ref.WeakReference
 

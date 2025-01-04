@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.me.ml.webview.utils.disk;
+package com.me.ml.webview.webutils.disk;
 
 import java.io.ByteArrayOutputStream;
 import java.io.Closeable;

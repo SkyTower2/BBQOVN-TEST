@@ -10,7 +10,7 @@ import com.me.ml.webview.callback.WebViewClientCallback
 import com.me.ml.webview.fragment.WebViewFragment
 import com.me.ml.webview.manager.WebViewManager
 import com.me.ml.webview.sealed.HandleResult
-import com.me.ml.webview.utils.LogWebViewUtils
+import com.me.ml.webview.webutils.LogWebViewUtils
 
 /**
  * author ：Peakmain
