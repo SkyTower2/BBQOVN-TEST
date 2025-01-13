@@ -1,0 +1,6 @@
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 允许访问应用专属外部存储目录 -->
+    <external-path name="external_files" path="." />
+    <!-- 允许访问应用的私有缓存目录 -->
+    <cache-path name="cache_files" path="." />
+</paths>

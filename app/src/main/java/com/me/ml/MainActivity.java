@@ -30,6 +30,7 @@ import com.me.ml.bluetooth_kit.search.response.SearchResponse;
 import com.me.ml.repository.DeviceSearchRepository;
 import com.me.ml.utils.BTUtils;
 import com.me.ml.utils.VersionUtils;
+import com.me.ml.utils.log.LogUtil;
 import com.me.ml.view.PullRefreshListView;
 import com.me.ml.view.PullToRefreshFrameLayout;
 import com.me.ml.xpopup.CustomPartShadowPopupView;
@@ -82,10 +83,13 @@ public class MainActivity extends Activity {
     private Handler mHandler = new Handler();
     private Runnable mUpdateRunnable;
 
+    private Context mContext;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        mContext = this;
 
         //设置状态栏，兼容4.4
         StatusBarUtil.setColor(this, CommonUtils.getColor(this, R.color.colorToolBar), 0);
@@ -267,6 +271,8 @@ public class MainActivity extends Activity {
 
                     //保存是否隐藏空名称
                     DeviceSearchRepository.getInstance().saveIsHideEmptyName(hideEmptyName);
+//                    LogUtil logUtil = LogUtil.getInstance();
+//                    logUtil.openLogFile(mContext);
                 }
             });
 

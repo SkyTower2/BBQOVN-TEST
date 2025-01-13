@@ -214,6 +214,9 @@ public class KLog {
             break;
         }
 
+//        LogUtil logUtil = LogUtil.getInstance();
+//        logUtil.startWriteLogToSdcard(null, true);
+//        logUtil.addLog(logStr);
     }
 
     private static void printLine(String tag, boolean isTop) {
