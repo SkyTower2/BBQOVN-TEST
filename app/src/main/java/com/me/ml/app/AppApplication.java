@@ -40,7 +40,7 @@ public class AppApplication extends BaseApplication {
         BluetoothContext.set(this);
 
         //是否开启打印日志
-        KLog.init(true);
+        KLog.init(this, true, false);
 
         initCrash();
 

@@ -30,7 +30,6 @@ import com.me.ml.bluetooth_kit.search.response.SearchResponse;
 import com.me.ml.repository.DeviceSearchRepository;
 import com.me.ml.utils.BTUtils;
 import com.me.ml.utils.VersionUtils;
-import com.me.ml.utils.log.LogUtil;
 import com.me.ml.view.PullRefreshListView;
 import com.me.ml.view.PullToRefreshFrameLayout;
 import com.me.ml.xpopup.CustomPartShadowPopupView;
@@ -271,8 +270,8 @@ public class MainActivity extends Activity {
 
                     //保存是否隐藏空名称
                     DeviceSearchRepository.getInstance().saveIsHideEmptyName(hideEmptyName);
-//                    LogUtil logUtil = LogUtil.getInstance();
-//                    logUtil.openLogFile(mContext);
+
+//                    KLog.openLogFile(mContext);
                 }
             });
 
